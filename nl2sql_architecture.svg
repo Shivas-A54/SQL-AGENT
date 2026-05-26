@@ -1,0 +1,73 @@
+<svg width="100%" viewBox="0 0 680 415" role="img" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif" style="">
+  <title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">NL2SQL Architecture Diagram</title>
+  <desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">Text-to-SQL pipeline: User provides a Question; LLM receives Meta Data, Prompt, and Question; generates SQL Query sent to Tool (SQL Executor); Tool queries Database; returns Table Response to User.</desc>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  <mask id="imagine-text-gaps-0s84x0" maskUnits="userSpaceOnUse"><rect x="0" y="0" width="680" height="415" fill="white"/><rect x="45.33333206176758" y="219" width="59.33333206176758" height="18" fill="black" rx="2"/><rect x="186.49166870117188" y="321.5" width="107.01667022705078" height="17" fill="black" rx="2"/><rect x="348.3500061035156" y="200.5" width="33.29999923706055" height="19" fill="black" rx="2"/><rect x="508.33331298828125" y="88" width="63.33333206176758" height="18" fill="black" rx="2"/><rect x="516.6666870117188" y="153" width="46.66666793823242" height="18" fill="black" rx="2"/><rect x="512" y="213" width="56" height="18" fill="black" rx="2"/><rect x="273.5" y="279.5" width="63" height="17" fill="black" rx="2"/><rect x="396.5583190917969" y="381.5" width="86.88333129882812" height="17" fill="black" rx="2"/></mask></defs>
+
+  <!-- DATABASE CYLINDER -->
+  <rect x="30" y="185" width="90" height="75" fill="#dae8fc" stroke="none" style="fill:rgb(218, 232, 252);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="30" y1="185" x2="30" y2="260" stroke="#6c8ebf" stroke-width="1" style="fill:rgb(0, 0, 0);stroke:rgb(108, 142, 191);color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="120" y1="185" x2="120" y2="260" stroke="#6c8ebf" stroke-width="1" style="fill:rgb(0, 0, 0);stroke:rgb(108, 142, 191);color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <path d="M30,260 a45,14 0 0,0 90,0" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1" style="fill:rgb(218, 232, 252);stroke:rgb(108, 142, 191);color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <ellipse cx="75" cy="185" rx="45" ry="14" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1" style="fill:rgb(218, 232, 252);stroke:rgb(108, 142, 191);color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="75" y="228" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#333" style="fill:rgb(51, 51, 51);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:central">Database</text>
+
+  <!-- TOOL (SQL EXECUTOR) OVAL -->
+  <ellipse cx="240" cy="330" rx="93" ry="27" fill="#f8cecc" stroke="#b85450" stroke-width="1" style="fill:rgb(248, 206, 204);stroke:rgb(184, 84, 80);color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="240" y="330" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#333" style="fill:rgb(51, 51, 51);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;text-anchor:middle;dominant-baseline:central">Tool (SQL Executor)</text>
+
+  <!-- LLM DIAMOND -->
+  <polygon points="365,155 450,210 365,265 280,210" fill="#fff2cc" stroke="#d6b656" stroke-width="1" style="fill:rgb(255, 242, 204);stroke:rgb(214, 182, 86);color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="365" y="210" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#333" style="fill:rgb(51, 51, 51);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:13px;font-weight:500;text-anchor:middle;dominant-baseline:central">LLM</text>
+
+  <!-- META DATA (page/document shape) -->
+  <path d="M478,72 L582,72 L603,93 L603,122 L478,122 Z" fill="#f5f5f5" stroke="#666" stroke-width="1" style="fill:rgb(245, 245, 245);stroke:rgb(102, 102, 102);color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <path d="M582,72 L582,93 L603,93" fill="none" stroke="#666" stroke-width="1" style="fill:none;stroke:rgb(102, 102, 102);color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="540" y="97" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#333" style="fill:rgb(51, 51, 51);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:central">Meta Data</text>
+
+  <!-- PROMPT -->
+  <rect x="478" y="142" width="125" height="40" rx="2" fill="#f5f5f5" stroke="#666" stroke-width="1" style="fill:rgb(245, 245, 245);stroke:rgb(102, 102, 102);color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="540" y="162" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#333" style="fill:rgb(51, 51, 51);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:central">Prompt</text>
+
+  <!-- QUESTION -->
+  <rect x="478" y="202" width="125" height="40" rx="2" fill="#f5f5f5" stroke="#666" stroke-width="1" style="fill:rgb(245, 245, 245);stroke:rgb(102, 102, 102);color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="540" y="222" text-anchor="middle" dominant-baseline="central" font-size="12" fill="#333" style="fill:rgb(51, 51, 51);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:12px;font-weight:400;text-anchor:middle;dominant-baseline:central">Question</text>
+
+  <!-- USER STICK FIGURE -->
+  <circle cx="645" cy="175" r="13" fill="none" stroke="#666" stroke-width="1.5" style="fill:none;stroke:rgb(102, 102, 102);color:rgb(251, 251, 254);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="645" y1="188" x2="645" y2="210" stroke="#666" stroke-width="1.5" style="fill:rgb(0, 0, 0);stroke:rgb(102, 102, 102);color:rgb(251, 251, 254);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="628" y1="197" x2="662" y2="197" stroke="#666" stroke-width="1.5" style="fill:rgb(0, 0, 0);stroke:rgb(102, 102, 102);color:rgb(251, 251, 254);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="645" y1="210" x2="630" y2="233" stroke="#666" stroke-width="1.5" style="fill:rgb(0, 0, 0);stroke:rgb(102, 102, 102);color:rgb(251, 251, 254);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <line x1="645" y1="210" x2="660" y2="233" stroke="#666" stroke-width="1.5" style="fill:rgb(0, 0, 0);stroke:rgb(102, 102, 102);color:rgb(251, 251, 254);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- CONNECTIONS -->
+
+  <!-- User → Question -->
+  <line x1="628" y1="203" x2="603" y2="218" stroke="#555" stroke-width="1" marker-end="url(#arr)" style="fill:rgb(0, 0, 0);stroke:rgb(85, 85, 85);color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Meta Data → LLM -->
+  <line x1="478" y1="97" x2="451" y2="210" stroke="#555" stroke-width="1" marker-end="url(#arr)" style="fill:rgb(0, 0, 0);stroke:rgb(85, 85, 85);color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Prompt → LLM -->
+  <line x1="478" y1="162" x2="451" y2="210" stroke="#555" stroke-width="1" marker-end="url(#arr)" style="fill:rgb(0, 0, 0);stroke:rgb(85, 85, 85);color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Question → LLM -->
+  <line x1="478" y1="222" x2="451" y2="210" stroke="#555" stroke-width="1" marker-end="url(#arr)" style="fill:rgb(0, 0, 0);stroke:rgb(85, 85, 85);color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- LLM → Tool (L-path with SQL Query label) -->
+  <path d="M365,265 L365,293 L240,293 L240,303" fill="none" stroke="#555" stroke-width="1" marker-end="url(#arr)" mask="url(#imagine-text-gaps-0s84x0)" style="fill:none;stroke:rgb(85, 85, 85);color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <rect x="266" y="279" width="78" height="18" rx="2" fill="white" stroke="none" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="305" y="288" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#555" style="fill:rgb(85, 85, 85);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;text-anchor:middle;dominant-baseline:central">SQL Query</text>
+
+  <!-- Tool → Database (diagonal) -->
+  <line x1="150" y1="330" x2="120" y2="252" stroke="#555" stroke-width="1" marker-end="url(#arr)" style="fill:rgb(0, 0, 0);stroke:rgb(85, 85, 85);color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Table Response return path -->
+  <path d="M240,357 L240,390 L640,390 L640,235" fill="none" stroke="#555" stroke-width="1" marker-end="url(#arr)" mask="url(#imagine-text-gaps-0s84x0)" style="fill:none;stroke:rgb(85, 85, 85);color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <rect x="378" y="381" width="124" height="18" rx="2" fill="white" stroke="none" style="fill:rgb(255, 255, 255);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text x="440" y="390" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#555" style="fill:rgb(85, 85, 85);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:Helvetica, Arial, sans-serif;font-size:11px;font-weight:400;text-anchor:middle;dominant-baseline:central">Table Response</text>
+
+</svg>
